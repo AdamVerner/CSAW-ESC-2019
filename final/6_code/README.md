@@ -15,6 +15,13 @@ data._36_4_ = 0x76656f73;
 data._40_4_ = CONCAT13(r.RFID[139],0x217265);
 ```
 
+also there is a hint
+```c
+String(&hint,"QmVyZ2VyIEtpbmc=");
+```
+if  decoded from base64 yeilds `Berger King`.
+No idea what that could mean, so skipping it.
+
 then there are calls to H45H class on functions
  - Init
  - Update
