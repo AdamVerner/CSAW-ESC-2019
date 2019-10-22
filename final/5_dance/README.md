@@ -60,6 +60,7 @@ k, p, a, b =  get_start()
 sol = b'password'
 for i in range(len(sol)):
     set_byte(p, i + 0x93, sol[i])
+get_hash(p, a, b)
 ```
 getting the hash:
 
