@@ -45,6 +45,12 @@ if __name__ == "__main__":
     # p[5] = [0]*12 + [24,25,26,27]
     # p[6] = [i+28 for i in range(8)] + [0]*8
 
+    # Chall 2 (cafe) solution
+    # 851a72b7fa00d1888fdcfecc5ccf5359c45b2003e2b5350e92798507c82f09a1
+    # a = [48, 72, 80, 32, 92, 36, 45, 32, 62, 146, 6, 23, 32, 20]
+    # for i in range(len(a)):
+    #     set_byte(p, i+78, a[i])
+
     # Chall 3 (stairs) solution
     # 396f4b1cdf1cc2e7680f2a8716a18c887cd489e12232e75b6810e9d5e91426c7
     # p[4] = [0x4a, 0x5c, 0x4c, 0x3e, 0x36, 0x22, 0x7d, 0x60, 0x6c, 0x64, 0x7c, 0x2e, 0, 0, 0, 0]
@@ -64,7 +70,13 @@ if __name__ == "__main__":
 
     # Chall 6 (code) solution
     # 372ded6746e45ef7c8ad5a22c5738a4b5aa982da66bc8a426aa1cca830d05af3
-    set_byte(p, 155, ord(b'L'))
+    # set_byte(p, 155, ord(b'L'))
+
+    # Chall 11 (recess) solution
+    #
+    # a = list(b'g00d')
+    # for i in range(len(a)):
+    #     set_byte(p, i+161, a[i])
 
 
     # Blocks 3, 7,... are where the MIFARE keys are stored, (probably) can't be used
