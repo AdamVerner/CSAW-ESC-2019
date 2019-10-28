@@ -1,4 +1,4 @@
-# Challanges
+# Challenges
 
 |set|number| name    | who | points |   hash  |
 |---|------|---------|-----|--------|---------|
@@ -13,14 +13,10 @@
 | C |  8   |         |     |        |   |
 | C |  9   |         |     |        |   |
 | C |  10  |         |     |        |   |
-| C |  11  | recess  |  H  |        |  `4c1f09387311c2e55c864f5ce02b08aa93104269144e44fc2aa5a171735dfab2`
+| C |  11  | recess  |  H  |        |  `4c1f09387311c2e55c864f5ce02b08aa93104269144e44fc2aa5a171735dfab2` |
 | D |  12  | bounce  |     |        |   |
-
 | E |  12  | steel   |     |        | `` |
-| E |  13  | caeser	 |     |        | `` |
+| E |  13  | caeser  |  A  |        | unverified |
 | E |  14  | spiral  |     |        | `` |
 | E |  15  | tower   |     |        | `` |
-
 | D |  15  |         |     |        |   |
-
-
