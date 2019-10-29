@@ -71,9 +71,14 @@ if __name__ == "__main__":
     # Chall 6 (code) solution
     # 372ded6746e45ef7c8ad5a22c5738a4b5aa982da66bc8a426aa1cca830d05af3
     # set_byte(p, 155, ord(b'L'))
+	
+    # Chall 10 (break)
+	# d19ead7568e53d7fa072df4b36662ee35d2bf53dab39fbe3580895633ef861a7
+    # set_byte(p, 143+0x10, 0x41)
+    # set_byte(p, 144+0x10, 0x61)
 
     # Chall 11 (recess) solution
-    #
+    # 4c1f09387311c2e55c864f5ce02b08aa93104269144e44fc2aa5a171735dfab2
     # a = list(b'g00d')
     # for i in range(len(a)):
     #     set_byte(p, i+161, a[i])
@@ -99,8 +104,8 @@ if __name__ == "__main__":
 
     if cmd == 'send':
         print(get_hash(p,a,b))
-        serial = Serial('/dev/ttyACM0', 2000000)
-            
+        # serial = Serial('/dev/ttyACM0', 2000000)
+        serial = Serial('COM3', 2000000)            
         serial.write(b'p')
 
         for i in range(64):
