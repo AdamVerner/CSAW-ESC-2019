@@ -92,6 +92,12 @@ if __name__ == "__main__":
     # a = 171 >> 4   # A = 10
     # b = 171 & 0xf  # B = 11
 
+    # Chall 14 (spiral)
+    # 6fd4edcfdb3a0289ac07472d65ed410d1dbca321ca5833c66560a30ede110db1
+    # a = bytes.fromhex('cafefade')
+    # for i in range(len(a)):
+    #     set_byte(p, i+381+16, a[i])
+
 
     # Blocks 3, 7,... are where the MIFARE keys are stored, (probably) can't be used
     try:

@@ -17,6 +17,6 @@
 | D |  8   | bounce  |     |        |   |
 | E |  12  | steel   |     |        | `` |
 | E |  13  | caeser  |  A  |  150   | `551b5cff372d310b57d39b616400461be0a1450c519a2a542f33a7af0dd565f3` |
-| E |  14  | spiral  |     |        | `` |
+| E |  14  | spiral  |  H  |  130   | `6fd4edcfdb3a0289ac07472d65ed410d1dbca321ca5833c66560a30ede110db1` |
 | E |  15  | tower   |     |        | `` |
 | F |  17  | spire   |     |        |   |
