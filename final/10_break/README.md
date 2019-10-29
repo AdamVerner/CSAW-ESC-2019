@@ -37,13 +37,11 @@ d19ead7568e53d7fa072df4b36662ee35d2bf53dab39fbe3580895633ef861a7
 
 but there are many more ways to solve it.
 
-givving our constrain to z3 we get 
+giving our constrain to z3 we get 
 
 1208370192830918 possible combinations (with different hashes)
 
-
-
-
+this was solved using z3, see more in solve.py
 
 
 
