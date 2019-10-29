@@ -34,7 +34,7 @@ if __name__ == "__main__":
     a = 0x0
     b = 0x0
 
-    # Chall 0 (lounge) solutions: (ask if there can be two)
+    # Chall 0 (lounge) solutions: (ask if there can be two -> https://github.com/TrustworthyComputing/csaw_esc_2019/issues/8)
     # 643a6fa20b171fdf3a9e7e1975ce62892fde9cecf2056a73d85fa2d0802d3000
     # set_byte(p, 76, 112); set_byte(p, 77, 232)
     # 6cd6ab9911818564e4f58cc5c25472a1c177917879210b077a728d96c23ccd83
@@ -77,6 +77,15 @@ if __name__ == "__main__":
     # a = list(b'g00d')
     # for i in range(len(a)):
     #     set_byte(p, i+161, a[i])
+
+    # Chall 13 (caeser)
+    # 551b5cff372d310b57d39b616400461be0a1450c519a2a542f33a7af0dd565f3
+    # set_byte(p, 400 + 0x10, 242)
+    # set_byte(p, 417, 169)
+    # set_byte(p, 418, 66)
+    # set_byte(p, 419, 97)
+    # a = 171 >> 4   # A = 10
+    # b = 171 & 0xf  # B = 11
 
 
     # Blocks 3, 7,... are where the MIFARE keys are stored, (probably) can't be used
