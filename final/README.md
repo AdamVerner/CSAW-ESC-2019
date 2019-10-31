@@ -11,7 +11,7 @@
 | B |  6   | code    |  A  |        | `372ded6746e45ef7c8ad5a22c5738a4b5aa982da66bc8a426aa1cca830d05af3` |
 | B |  7   |         |     |        |  blue tag garbage hash |
 | C |  8   | uno     |  A  |  200   | `0deec0b5e1717a9d721c56e9de437dcc86241c65a4afa1c977cf139a29bf7daa`  |
-| C |  9   | game    |  A  |        | unverified  |
+| C |  9   | game    |  A  |  150   | `a536829856d84ccd53ff8bcf534a65c5678bdbe9ce20f78407e1c987ba517e8a`  |
 | C |  10  | break   |  A  |  70    | `d19ead7568e53d7fa072df4b36662ee35d2bf53dab39fbe3580895633ef861a7` |
 | C |  11  | recess  |  H  |  100   | `4c1f09387311c2e55c864f5ce02b08aa93104269144e44fc2aa5a171735dfab2` |
 | D |  8   | bounce  |     |        |  return address overwrite |

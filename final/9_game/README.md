@@ -1,6 +1,6 @@
-# Challenge 9 (Board)
+# Challange 9 (Board)
 
-apart of the challenge answer there are some data pushed on stack
+apart of the challange answer there are some data pushed on stack
 ``` c
 	/* xx__o____ */
 board._0_4_ = 0x5f5f7878;
@@ -15,7 +15,7 @@ evaluate((char (*) [3])board);
 findBestMove((char (*) [3])&local_78);
 ```
 
-guessing from that the challenge is trying to play some game.
+guessing from that the challange is trying to play some game.
 After decoding the initial data to ascii and dividing it to 3x3 grid wi find out it's actually TIC-TAC TOE
 
 Out input gets processed by this piece of code:
@@ -44,45 +44,63 @@ the data from `answer` will get copied into the challHash.
 
 ## Playing the game
 
-the gameboard looks like:
+In the beggining the gameboard looks like:
 ```
 x x _
 _ o _
 _ _ _
 ```
-so the game already started and it's our move.
-Placing `o` at coords `[2:0] ` will stop our opponent.
+
+Judging from the years of TIC-TAC-TOE practice we see right away, that this game if played right 
+can only be tied, not won by any party, but that should not be a problem as a tie is enough for us.
+
+### Round 1
+So let's play `[2:0]` so opponent can't win
 ```
 x x o
 _ o _
 _ _ _
 ```
-If the opponent is programmed correctly (and we hope he is) he will play `[0:2]` 
 
-There are no outputs to Serial, so we'll just hope he'll play:
+Now the oponent should block our obvous row of 2 `o`'s
 ```
 x x o
 _ o _
 x _ _
 ```
-Stopping us.
 
-Our next play will be `[2:1]` making us win in the next round
+### Round 2
+It's obvious what we should play next
 ```
 x x o
-_ o o
+o o _
+x _ _
+```
+and so is for the oponent
+```
+x x o
+o o x
 x _ _
 ```
 
-But heres the problem, we do not know if the bot will play `[0:1]` or `[2:2]` and we can't learn that in any way.
-So we'll try `[0:1]` first, if that doesn't succeed, we'll try `[2:2]`
-If the bot is deterministic we'll win on either one of the tries.
+# Round 3
+Looking at the gameboard from last round we see  a little issue.
 
-Eventually we could try to rewrite the bots logic and run it locally, but this is faster.
+No matter what we choose the game will end without any winner, 
+you can see that in the next figure.
+```
+x x o   ||  x x o
+o o x   ||  o o x
+x x o   ||  x o x
+```
+
+But this has one backdraw. We have two different ways to play this game, that means
+we'll get two different flags.
 
 ```
-set_byte(n, 0x9c, 0x02)
-set_byte(n, 0x9d, 0x12)
-set_byte(n, 0x9e, 0x10)  # set_byte(n, 0x9e, 0x22)
+a536829856d84ccd53ff8bcf534a65c5678bdbe9ce20f78407e1c987ba517e8a
 ```
-
+or
+```
+a536829856d84ccd53ff8bcf534a65c5678bdbe9ce20f78407e1c987ba517e8a
+```

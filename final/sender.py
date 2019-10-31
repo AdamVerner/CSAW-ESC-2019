@@ -84,11 +84,10 @@ if __name__ == "__main__":
 	
 	
 	# Chall 9 game solution
-    # set_byte(p, 0x9c, 0x02)
-    # set_byte(p, 0x9d, 0x12)
-    # set_byte(p, 0x9e, 0x10) #    set_byte(p, 0x9e, 0x22)
-	# either
-	# 96411a826eba4299493b6f1e29b3cb278ab9f2c3f47300b37d0588656145d513
+    # set_byte(p, 0x9c, 0x02)  # y = 0 x = 2
+    # set_byte(p, 0x9d, 0x10)  # y = 1 x = 0
+    # set_byte(p, 0x9e, 0x21)  # or 0x22 for different flag
+    # 63c0b41f89bbf493ba791c092b3e5473e243b9c16666f1e5eaa82bc52eeb1613
 	# or 
 	# 03fe0fec145adf7d629e6471822a145d9920536658a80f9d2c1694ebc174cecf
 
