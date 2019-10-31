@@ -1,4 +1,4 @@
-as first step, the challange pushes some data on stack
+as first step, the challenge pushes some data on stack
 
 renaming and restructuring data it looks like this:
 ```c

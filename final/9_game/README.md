@@ -1,6 +1,6 @@
-# Challange 9 (Board)
+# Challenge 9 (Board)
 
-apart of the challange answer there are some data pushed on stack
+apart of the challenge answer there are some data pushed on stack
 ``` c
 	/* xx__o____ */
 board._0_4_ = 0x5f5f7878;
@@ -15,7 +15,7 @@ evaluate((char (*) [3])board);
 findBestMove((char (*) [3])&local_78);
 ```
 
-guessing from that the challange is trying to play some game.
+guessing from that the challenge is trying to play some game.
 After decoding the initial data to ascii and dividing it to 3x3 grid wi find out it's actually TIC-TAC TOE
 
 Out input gets processed by this piece of code:
