@@ -3,6 +3,7 @@
 from hashlib import sha256
 from serial import Serial
 from sys import argv
+import struct
 
 class Challange():
     
@@ -153,20 +154,17 @@ class Challange():
         elif  identificator == '15':  # D - tower
             raise Exception("Not solved yet")
         elif  identificator == '17':  # D - spire
-        
+            
+            a = struct.pack('<i', -12)[::-1]
+            for i in range(len(a)):
+                self.set_byte(644+i, a[i])
             self.set_byte(879, 1)
-            self.set_byte(832, 1)
-            
-            self.set_byte(641, 0x100 - 12)
-            self.set_byte(642, 0xff)
-            self.set_byte(643, 0xff)
-            self.set_byte(644, 0xff)
-            self.set_byte(645, 1)
-            
-            self.set_byte(719 - 12, 0x02)  # set private to 2
-            
-            self.set_byte(719 - 8, 0x02)  # set d to 2
-            
+            a = b'\x74\x76\x00\x20'[::-1]
+            for i in range(len(a)):
+                self.set_byte(719-1-i, a[i])
+            for i in range(4):
+                self.set_byte(719-9-i, 1)
+			# f322344822257bb66542629db08bcea285411068963e30f0595847c79ef76f37
             
         else:
             raise Exception("Invalid Identificator")
