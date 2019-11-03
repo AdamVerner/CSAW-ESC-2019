@@ -55,3 +55,15 @@ center = (r.RFID[385] - r.RFID[387] * r.RFID[386]) % 25 + 45;
 ```
 
 
+```
+...
+4765fae13f940050ded3e959089093e7 3e
+18c41a53c2be6229deb7711f9d95c8c9 3d
+1bb86483cd6dec71551793f94d1ac95f 3c
+703224f765d313ee4ed0fadcf9d63a5e 3b <-
+9329af69fd45bf4fb15abf5cbe3d1625 3a
+d561e48fc0b225b1ed37a6120ab0efd3 39
+7a44262a1ea0504030bebe8a674779a8 38
+...
+```
+
