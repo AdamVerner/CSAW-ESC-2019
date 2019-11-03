@@ -15,7 +15,7 @@
 | C |  10  | break   |  A  |  70    | `d19ead7568e53d7fa072df4b36662ee35d2bf53dab39fbe3580895633ef861a7` |
 | C |  11  | recess  |  H  |  100   | `4c1f09387311c2e55c864f5ce02b08aa93104269144e44fc2aa5a171735dfab2` |
 | D |  8   | bounce  |     |        |  return address overwrite |
-| E |  12  | steel   |     |        | md5 chain |
+| E |  12  | steel   |     |        | `5921d2ca353338c5f04c92205dc8f8bc8734f092a9e63e5f02ec106f7a7d99b4` |
 | E |  13  | caeser  |  A  |  150   | `551b5cff372d310b57d39b616400461be0a1450c519a2a542f33a7af0dd565f3` |
 | E |  14  | spiral  |  H  |  130   | `6fd4edcfdb3a0289ac07472d65ed410d1dbca321ca5833c66560a30ede110db1` |
 | E |  15  | tower   |     |        | sha256 bullshit |

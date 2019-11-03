@@ -135,7 +135,8 @@ class Challange():
             raise Exception("Not solved yet")
             
         elif  identificator == '12':  # D - steel
-            raise Exception("Not solved yet")
+            self.set_byte(401, 14)
+            # 5921d2ca353338c5f04c92205dc8f8bc8734f092a9e63e5f02ec106f7a7d99b4
             
         elif  identificator == '13':  # D - caeser
             # 551b5cff372d310b57d39b616400461be0a1450c519a2a542f33a7af0dd565f3
