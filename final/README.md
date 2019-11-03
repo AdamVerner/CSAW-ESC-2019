@@ -9,7 +9,7 @@
 | B |  4   | mobile  |  H  |        | `807548c85963e9f9aa9921cb344997ccfe57ba91cd00f13122c2f15e5b3a70d1` |
 | B |  5   | dance   |  A  |        | `e631b32e3e493c51e5c2b22d1486d401c76ac83e3910566924bcc51b2157c837` |
 | B |  6   | code    |  A  |        | `372ded6746e45ef7c8ad5a22c5738a4b5aa982da66bc8a426aa1cca830d05af3` |
-| B |  7   |         |     |        |  blue tag garbage hash |
+| B |  7   | blue    |     |        |  sender does not work with this challenge |
 | C |  8   | uno     |  A  |  200   | `0deec0b5e1717a9d721c56e9de437dcc86241c65a4afa1c977cf139a29bf7daa` |
 | C |  9   | game    |  A  |  150   | `a536829856d84ccd53ff8bcf534a65c5678bdbe9ce20f78407e1c987ba517e8a` |
 | C |  10  | break   |  A  |  70    | `d19ead7568e53d7fa072df4b36662ee35d2bf53dab39fbe3580895633ef861a7` |
@@ -20,3 +20,15 @@
 | E |  14  | spiral  |  H  |  130   | `6fd4edcfdb3a0289ac07472d65ed410d1dbca321ca5833c66560a30ede110db1` |
 | E |  15  | tower   |     |        | sha256 bullshit |
 | F |  17  | spire   |  AH |  150   | `f322344822257bb66542629db08bcea285411068963e30f0595847c79ef76f37` |
+
+
+# sender.py
+
+Modified utility to send challenge an
+
+
+usage:
+```
+./sender.py ID hash
+./sender.py ID send /dev/ttyACM0
+```

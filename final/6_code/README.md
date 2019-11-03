@@ -59,7 +59,7 @@ set_byte(p, 155, key)
 print(get_hash(p, a, b))
 ```
 
-which work and yeild hash
+which works and yeilds a hash
 ```
 372ded6746e45ef7c8ad5a22c5738a4b5aa982da66bc8a426aa1cca830d05af3
 ```

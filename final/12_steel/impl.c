@@ -11,7 +11,7 @@ int main(){
             
                 uint8_t center = (i-k*j) % 25 + 45;
 
-              	printf("%x:%x:%x\n", i, j, k);
+              	printf("%x=%x:%x:%x\n",center, i, j, k);
                 
             }
     
