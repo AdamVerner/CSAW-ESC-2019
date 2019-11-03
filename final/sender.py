@@ -109,9 +109,8 @@ class Challenge():
             # 372ded6746e45ef7c8ad5a22c5738a4b5aa982da66bc8a426aa1cca830d05af3
             self.set_byte(155, ord(b'L'))
     
-        
         elif  identificator == '7':  # B - 
-            raise Exception("7 is not solved yet")
+            raise Exception("sender.py is not applicable for this challenge")
         
         elif  identificator == '8c':  # C - Uno
             # one of many solutions
