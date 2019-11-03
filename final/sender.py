@@ -126,13 +126,13 @@ class Challenge():
             self.set_byte(0x9c, 0x02)  # y = 0 x = 2
             self.set_byte(0x9d, 0x10)  # y = 1 x = 0
             self.set_byte(0x9e, 0x21)  # or 0x22 for different flag
-            # 63c0b41f89bbf493ba791c092b3e5473e243b9c16666f1e5eaa82bc52eeb1613
+            # a536829856d84ccd53ff8bcf534a65c5678bdbe9ce20f78407e1c987ba517e8a
         
         elif  identificator == '9a':  # C - game
             self.set_byte(0x9c, 0x02)
             self.set_byte(0x9d, 0x10)
             self.set_byte(0x9e, 0x22)
-            # 03fe0fec145adf7d629e6471822a145d9920536658a80f9d2c1694ebc174cecf
+            # 63c0b41f89bbf493ba791c092b3e5473e243b9c16666f1e5eaa82bc52eeb1613
         
         elif  identificator == '10':  # C - break
             # d19ead7568e53d7fa072df4b36662ee35d2bf53dab39fbe3580895633ef861a7
@@ -196,6 +196,7 @@ class Challenge():
             '7',
             '8c',
             '9',
+            '9a',
             '10',
             '11',
             '12',
