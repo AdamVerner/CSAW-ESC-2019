@@ -110,7 +110,15 @@ class Challenge():
             self.set_byte(155, ord(b'L'))
     
         elif  identificator == '7':  # B - 
-            raise Exception("sender.py is not applicable for this challenge")
+            data = bytes.fromhex('5d9295a4b98018b51dd9213c2aef00cc6abc1ffbd341d88226fed70d4b6449dc55c57178fd1034da11e073ba2d6f2f45')
+            # data = bytes.fromhex('5d9295a4b98018b5')
+            for i, b in enumerate(data):
+                self.set_byte(i + 960, b)
+
+            # Should set key A for sector 0x3F (not working with sender.py)
+            key = bytes.fromhex('5d6a0064f591')
+            for i, b in enumerate(key):
+                self.set_byte(i + 0x3f0, b)
         
         elif  identificator == '8c':  # C - Uno
             # one of many solutions
